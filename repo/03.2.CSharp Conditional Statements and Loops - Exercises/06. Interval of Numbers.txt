@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class ZaTriene {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner scanner = new Scanner(System.in);
+
+        int firstNum = Integer.parseInt(scanner.nextLine());
+        int secondNum = Integer.parseInt(scanner.nextLine());
+
+        if (firstNum <= secondNum){
+            for (int i = firstNum; i <= secondNum; i++) {
+                System.out.println(firstNum);
+                firstNum++;
+            }
+        }else {
+            for (int i = secondNum; i <= firstNum; i++) {
+                System.out.println(secondNum);
+                secondNum++;
+            }
+        }
+    }
+}

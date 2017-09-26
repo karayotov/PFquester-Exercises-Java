@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ZaTriene {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner scanner = new Scanner(System.in);
+        int counter = 1;
+        String ingredient = "";
+        for (int i = 0; i < counter; i++) {
+
+            ingredient = scanner.nextLine();
+
+            if (ingredient.equals("Bake!")){
+                counter--;
+                System.out.printf("Preparing cake with %d ingredients.", counter);
+                System.out.println();
+        }else {
+                counter++;
+                System.out.printf("Adding ingredient %s.", ingredient);
+                System.out.println();
+           }
+        }
+    }
+}

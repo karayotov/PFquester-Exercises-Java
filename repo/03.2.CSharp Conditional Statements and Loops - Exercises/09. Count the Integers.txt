@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class ZaTriene {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner scanner = new Scanner(System.in);
+
+        int input = 0;
+        int loopLenght = 1;
+        for (int i = 0; i < loopLenght; i++) {
+            try {
+
+                input += Integer.parseInt(scanner.nextLine());
+                loopLenght++;
+
+            }catch (Exception e){
+
+                loopLenght--;
+                System.out.println(loopLenght);
+
+            }
+        }
+    }
+}
