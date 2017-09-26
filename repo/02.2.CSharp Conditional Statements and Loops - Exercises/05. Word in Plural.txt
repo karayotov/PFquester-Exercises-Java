@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ZaTriene {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner scanner = new Scanner(System.in);
+        String singleWord = scanner.nextLine();
+
+        if (singleWord.charAt(singleWord.length() - 1) == 'y'){
+            singleWord = singleWord.replace(singleWord.substring(singleWord.length() - 1), "ies");
+            System.out.println(singleWord);
+
+        }else if (singleWord.charAt(singleWord.length() - 1) == 'h'){
+            if (singleWord.charAt(singleWord.length() - 2) == 'c' || singleWord.charAt(singleWord.length() - 2) == 's')
+
+            System.out.printf("%ses", singleWord);
+        }else if (singleWord.charAt(singleWord.length() - 1) == 'o'
+                || singleWord.charAt(singleWord.length() - 1) == 's'
+                || singleWord.charAt(singleWord.length() - 1) == 'x'
+                || singleWord.charAt(singleWord.length() - 1) == 'z') {
+
+            System.out.printf("%ses", singleWord);
+        }else{
+            System.out.printf("%ss", singleWord);
+        }
+    }
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class ZaTriene {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String profession = scanner.nextLine();
+        double quantity = Double.parseDouble(scanner.nextLine());
+        double waterPrice = 0.7;
+        double coffeePrice = 1.0;
+        double beerPrice = 1.7;
+        double teaPrice = 1.2;
+
+        switch (profession){
+            case "Athlete":
+                quantity *= waterPrice;
+                        System.out.printf("The %s has to pay %.2f.", profession, quantity);
+                break;
+            case "Businessman":
+            case "Businesswoman":
+                quantity *= coffeePrice;
+                        System.out.printf("The %s has to pay %.2f.", profession, quantity);
+                break;
+            case "SoftUni Student":
+                quantity *= beerPrice;
+                        System.out.printf("The %s has to pay %.2f.", profession, quantity);
+                break;
+                default:
+                    quantity *= teaPrice;
+                            System.out.printf("The %s has to pay %.2f.", profession, quantity);
+                    break;
+        }
+    }
+}

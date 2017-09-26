@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ZaTriene {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try{
+            int number = Integer.parseInt(scanner.nextLine());
+            System.out.printf("It is a number.");
+            return;
+        }catch (Exception e){
+            System.out.printf("Invalid input!");
+            return;
+        }
+    }
+}
