@@ -7,3 +7,6 @@ we resolved repo
 This project will contain....
 Repository made for exercices.
 }
+{
+adding some more
+}
