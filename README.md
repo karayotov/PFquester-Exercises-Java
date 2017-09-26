@@ -10,10 +10,7 @@ changes in master branch
 =======
 }
 {
-This project will contain....
-Repository made for exercices.
-}
-{
+adding new changes
 adding some more
 }
 >>>>>>> develop
